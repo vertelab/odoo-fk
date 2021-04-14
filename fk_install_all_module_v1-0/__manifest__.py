@@ -1,6 +1,6 @@
 {
-    "name": "Fk Template Module",
-    "version": "13.0.1.0.2",
+    "name": "Fk Install All v1.0",
+    "version": "13.0.1.0.3",
     "author": "Vertel AB",
     "maintainer": "Vertel AB",
     "contributor": "Vertel AB",
@@ -8,13 +8,14 @@
     "website": "https://vertel.se/",
     "category": "Tools",
     "description": """
-Test Module \n
+Fk Install All v1.0 \n
 ======================================================\n
-Hover over fields to se a brief description of them \n
-For more information make sure you are in debug mode \n
-v13.0.1.0.1 - AFC-123 Added the module to the repo \n
+This module installs all modules required for an Fk installation. \n
+v13.0.1.0.1 - Added the module to the repo \n
+v13.0.1.0.2 - PEP-8 refactoring. \n
+v13.0.1.0.3 - Updated module name, version number, description. \n
+
 Repositories\n
-13.0.1.0.2 - PEP-8 refactoring.
 https://github.com/muk-it/muk_base
 https://github.com/muk-it/muk_web
 https://github.com/odoo/odoo \n
@@ -63,13 +64,12 @@ https://github.com/vertelab/odoo-user-mail/
         "sale_management",
         "snippet_addons",
         "survey",
-        "website"
+        "website",
+        "fk_security" # Vertel AB
     ],
     "external_dependencies": [
     ],
     "data": [
-        'views/res_partner.xml',
-        'security/ir.model.access.csv'
     ],
     "application": False,
     "installable": True,

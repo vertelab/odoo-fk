@@ -1,19 +1,18 @@
 {
-    "name": "Fk Template Module",
+    "name": "Fk Security",
     "version": "13.0.1.0.1",
     "author": "Vertel AB",
     "maintainer": "Vertel AB",
     "contributor": "Vertel AB",
     "license": "AGPL-3",
     "website": "https://vertel.se/",
-    "category": "Tools",
+    "category": "Extra Rights",
     "description": """
-Test Module \n
+Fk Security \n
 ======================================================\n
-Hover over fields to se a brief description of them \n
-For more information make sure you are in debug mode \n
-v13.0.1.0.1 - <task-number> Added the module to the repo \n
-
+This module adds secuirty groups in Odoo to make it \n
+behave according to the requirements by Fk. \n
+v13.0.1.0.1 - 1,008 Added the module to the repo \n
 """,
     "depends": [
         "contacts"
@@ -21,8 +20,7 @@ v13.0.1.0.1 - <task-number> Added the module to the repo \n
     "external_dependencies": [
     ],
     "data": [
-        'views/res_partner.xml',
-        'security/ir.model.access.csv' 
+        'data/res_groups.xml'
     ],
     "application": False,
     "installable": True,
