@@ -65,7 +65,11 @@ https://github.com/vertelab/odoo-user-mail/
         "snippet_addons",
         "survey",
         "website",
-        "fk_security" # Vertel AB
+        "fk_security", # Vertel AB
+        "product_versioning",
+        "project_hierarchy",
+        "project_forecast_ce",
+        "project_resource_mgm"
     ],
     "external_dependencies": [
     ],
