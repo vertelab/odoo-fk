@@ -15,12 +15,16 @@ behave according to the requirements by Fk. \n
 v13.0.1.0.1 - 1,008 Added the module to the repo \n
 """,
     "depends": [
-        "contacts"
+        "project_status",
+        "project_milestone"
     ],
     "external_dependencies": [
     ],
     "data": [
-        'data/res_groups.xml'
+        'data/res_groups.xml',
+        'data/ir_ui_menu.xml',
+        'data/ir_rule.xml',
+        'security/ir.model.access.csv'
     ],
     "application": False,
     "installable": True,

@@ -1,0 +1,31 @@
+<odoo>
+    <record id="project.project_public_members_rule" model="ir.rule">
+        <field name="perm_create" eval="False"/> 
+        <field name="perm_write" eval="False"/> 
+        <field name="perm_unlink" eval="False"/> 
+    </record>
+
+    <record id="project.project_public_members_rule" model="ir.rule">
+        <field name="">Project manager can edit own projects</field>
+        <field name="model_id" eval="ref('project.model_project_project')"/> 
+        <field name="active" eval="True"/>
+        <field name="domain_force">[('user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('fk_security.fk_project_manager'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_create" eval="False"/> 
+        <field name="perm_write" eval="True"/> 
+        <field name="perm_unlink" eval="False"/> 
+    </record>
+
+    <record id="project.project_public_members_rule" model="ir.rule">
+        <field name="">Project manager can edit own projects milestones</field>
+        <field name="model_id" eval="ref('project_milestone.model_project_milestone')"/> 
+        <field name="active" eval="True"/>
+        <field name="domain_force">[('user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('fk_security.fk_project_manager'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_create" eval="True"/> 
+        <field name="perm_write" eval="True"/> 
+        <field name="perm_unlink" eval="True"/> 
+    </record>
+</odoo>

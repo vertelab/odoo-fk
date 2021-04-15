@@ -1,0 +1,14 @@
+<odoo>
+    <!-- Add groups to menu options -->
+    <record id="project.menu_main_pm" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('fk_security.fk_project_manager'))]"/>
+    </record>
+    <record id="project.menu_project_config" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('fk_security.fk_project_manager'))]"/>
+    </record>
+    <!--
+    <record id="project.menu_projects_config" model="ir.ui.menu">
+        <field name="groups_id" eval="[(4, ref('fk_security.fk_project_manager'))]"/>
+    </record>
+    -->
+</odoo>
