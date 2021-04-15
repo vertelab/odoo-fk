@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_project_project_fk_man,project.project,project.model_project_project,fk_security.fk_project_manager,1,1,0,0
 access_project_status_fk_man,project.status,project_status.model_project_status,fk_security.fk_project_manager,1,0,0,0
-access_project_milestone_fk_man,project.milestone,project_milestone.model_project_milestone,fk_security.fk_project_manager,1,1,0,0
+access_project_milestone_fk_man,project.milestone,project_milestone.model_project_milestone,fk_security.fk_project_manager,1,1,1,1
+access_project_task_fk_man,project.task,project.model_project_task,fk_security.fk_project_manager,1,1,1,1
